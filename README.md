@@ -1,4 +1,4 @@
-##GKE Preemtible Killer
+## GKE Preemtible Killer
 Source: https://github.com/estafette/estafette-gke-preemptible-killer.git
 
 Source version: 1.2.5
@@ -50,7 +50,7 @@ module "preemtible-killer" {
 | INTERVAL               | 600      | Time in second to wait between each node check
 | WHITELIST_HOURS        |          | List of UTC time intervals in the form of `["07:00 - 19:00"]` in which deletion is allowed and preferred
 
-##GKE node termination handler
+## GKE node termination handler
 Source: https://github.com/estafette/k8s-node-termination-handler  
 Source version: 0.1.2-main-11  
 
