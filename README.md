@@ -16,8 +16,6 @@ At a given interval, the application get the list of preemptible nodes and check
 * This tool increases the chances to have many small disruptions instead of one major disruption.
 * This tool does not guarantee that major disruption is avoided - GCP can trigger large disruption because the way preemptible instances are managed. Ensure your have PDB and enough of replicas, so for better safety just use non-preemptible nodes in different zones. You may also be interested in estafette-gke-node-pool-shifter.
 
-
-
 ### Terraform providers:
 * google >= (v 3.19.0)
 * kubernetes => (v 1.11.1)
@@ -51,3 +49,10 @@ module "preemtible-killer" {
 | DRAIN_TIMEOUT          | 300      | Max time in second to wait before deleting a node
 | INTERVAL               | 600      | Time in second to wait between each node check
 | WHITELIST_HOURS        |          | List of UTC time intervals in the form of `["07:00 - 19:00"]` in which deletion is allowed and preferred
+
+##GKE node termination handler
+Source: https://github.com/estafette/k8s-node-termination-handler  
+Source version: 0.1.2-main-11  
+
+#### What & Why? 
+https://github.com/estafette/k8s-node-termination-handler/blob/main/README.md
