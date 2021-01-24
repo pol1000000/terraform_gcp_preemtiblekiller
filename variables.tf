@@ -39,7 +39,7 @@ variable "additional_handler_set" {
 }
 
 variable "helm_handler_release" {
-  default     = "0.1.2-main-11"
+  default     = "0.1.1"
   description = "https://github.com/estafette/k8s-node-termination-handler"
 }
 # helm repo add Estafette https://helm.estafette.io/ && helm repo update && helm search k8s-node-termination-handler -l

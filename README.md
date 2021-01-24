@@ -1,7 +1,6 @@
 ## GKE Preemtible Killer
 Source: https://github.com/estafette/estafette-gke-preemptible-killer.git
 
-Source version: 1.2.5
 ### Why?
 When creating a cluster, all the node are created at the same time and should be deleted after 24h of activity. To prevent large disruption, the estafette-gke-preemptible-killer can be used to kill instances during a random period of time between 12 and 24h. It makes use of the node annotation to store the time to kill value.
 
@@ -52,7 +51,6 @@ module "preemtible-killer" {
 
 ## GKE node termination handler
 Source: https://github.com/estafette/k8s-node-termination-handler  
-Source version: 0.1.2-main-11  
 
 #### What & Why? 
 https://github.com/estafette/k8s-node-termination-handler/blob/main/README.md
